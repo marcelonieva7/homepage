@@ -145,67 +145,73 @@ body {
 
 /*Contact info styles*/
 
-.contact-info__header,
-.contact-info__sub-header {
-  text-align: center;
+#third-page {
+  /* background-color: lightgreen; */
+  width: 100%;
+  padding-top: 13vw;
+  padding-bottom: 13vw;
+  background-color: #fff;
 }
 
-.contact-info__header {
-  color: var(--primary-text-color);
-  margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
+.third-page-content {
+  margin-top: -15vh;
 }
 
-.contact-info__sub-header {
-  color: var(--secondary-text-color);
-  margin-bottom: 30px;
-}
-
-.contact-info__block {
+.third-page-upper {
+  color: #000;
+  font-family: "Matter Regular";
+  font-size: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 5vw 11vw;
+  padding-bottom: 1vw;
 }
 
-.contact-info__block--center {
-  justify-content: center;
+.hey {
+  font-family: "Matter Light";
+  font-style: italic;
 }
 
-.contact-info__item {
-  color: var(--secondary-text-color);
-  text-decoration: none;
+.third-page-middle {
+  padding: 3vw 11vw;
+  margin-top: 2vw;
+}
+
+.third-page-middle p {
+  font-family: "Matter Light";
+  font-size: 30px;
+}
+
+.third-page-lower {
+  /* background-color: lightgray; */
+  padding: 0vw 11vw;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: start;
+  gap: 2vw;
 }
-
-.contact-info__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.contact-info__item-icon-wrapper {
-  margin-right: 10px;
-  width: 20px;
+.third-page-lower__btn {
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  padding-right: 7px;
 }
 
-.contact-info__item-icon path {
-  fill: var(--icon-color);
-}
-
-.contact-info__item-icon {
-  height: 1.1428rem;
-  vertical-align: text-bottom;
-}
-
-.contact-info__avatar {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
+.third-page-lower button {
+  padding: 1.3vw 2vw;
+  font-family: "Matter Regular";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #000;
+  background-color: transparent;
+  border: 2.5px solid #000;
+  border-radius: 100px;
+  text-transform: capitalize;
 }
 
 /* Skills styles */
