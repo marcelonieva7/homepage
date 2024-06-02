@@ -36,12 +36,12 @@ body {
 
 @font-face {
   font-family: "Matter Regular";
-  src: url('resources/fonts-ttf/matter-regular.ttf') format('truetype');
+  src: url('assets/fonts-ttf/matter-regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Matter Light";
-  src: url('resources/fonts-ttf/matter-light.ttf') format('truetype');
+  src: url('assets/fonts-ttf/matter-light.ttf') format('truetype');
 }
 
 #main {
