@@ -49,6 +49,68 @@ body {
   margin-bottom: 15px;
 }
 
+/* Herp styles */
+
+.content-container {
+  width: 100%;
+  padding: 15vw 11vw;
+}
+
+.cover {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  padding-bottom: 0%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-upper {
+  font-family: "Matter Regular";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-left: 6px;
+  color: #000;
+}
+
+.content-upper::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.content-medium {
+  font-family: "Matter Regular";
+  font-size: 7.5rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #605d5d;
+  letter-spacing: -6px;
+
+}
+
+.end-home-page {
+  width: 100%;
+  padding: 1vw 11vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.end-content {
+  font-family: "Matter Regular";
+  font-size: 30px;
+  font-weight: 600;
+  word-spacing: 2px;
+  line-height: 40px;
+}
+
+.end-content::selection {
+  color: #fff;
+  background-color: #000;
+}
+
 /*Contact info styles*/
 
 .contact-info__header,
