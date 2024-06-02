@@ -214,15 +214,79 @@ body {
 
 /* Skills styles */
 
-.skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
-  margin-bottom: 15px;
+#fourth-page {
+  width: 100%;
+  background-color: #161616;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.fourth-page-upper {
+  padding: 3vw 11vw;
+  color: #fff;
+  padding-bottom: 0vw;
+}
+
+.fourth-page-upper p {
+  font-family: "Matter Regular";
+  font-size: 120px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: -2vw;
+}
+
+.fourth-page-upper p::selection {
+  color: #000;
+  background-color: #fff;
+}
+
+.resources {
+  font-family: "Matter Light";
+  font-style: italic;
+}
+
+.fourth-page-middle {
+  padding: 3vw 11vw;
+  padding-top: 4.5vw;
+}
+
+#github-btn {
+  padding: 10px 45px;
+}
+
+.fourth-page-middle button {
+  padding: 10px 20px;
+  font-family: "Matter Regular";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #7a7070;
+  border-radius: 100px;
+  text-transform: capitalize;
+}
+
+.fourth-page-middle a {
+  padding-right: 10px;
+}
+
+.skill-btn svg, #github-btn svg{
+  height: 35px;
+  width: 35px;
+}
+
+.fourth-page-lower {
+  padding: 0vw 11vw;
+  margin-top: -1vw;
+}
+
+.fourth-page-lower p {
+  font-family: "Matter Light";
+  width: 62.5%;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
 }
 
 /*Experience and additional info styles*/
