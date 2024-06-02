@@ -19,8 +19,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 30px;
-  max-width: 900px;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .fh {
