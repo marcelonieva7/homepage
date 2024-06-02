@@ -18,10 +18,10 @@ body {
   overflow-x: hidden;
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
-  --durability-text-color: #6a737d9c;
+  --durability-text-color: #26292cb9;
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --text-decoration-color: #383838c7;
 }
 
 ::-webkit-scrollbar {
@@ -145,18 +145,18 @@ body {
 
 /*Contact info styles*/
 
-#third-page {
+#third-page, #fifth-page {
   width: 100%;
   padding-top: 13vw;
   padding-bottom: 13vw;
   background-color: #fff;
 }
 
-.third-page-content {
+.third-page-content, .fifth-page-content {
   margin-top: -15vh;
 }
 
-.third-page-upper {
+.third-page-upper, .fifth-page-upper {
   color: #000;
   font-family: "Matter Regular";
   font-size: 100px;
@@ -171,7 +171,7 @@ body {
   font-style: italic;
 }
 
-.third-page-middle {
+.third-page-middle, .fifth-page-middle {
   padding: 3vw 11vw;
   margin-top: 2vw;
 }
@@ -291,6 +291,11 @@ body {
 
 /*Experience and additional info styles*/
 
+.fifth-page-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
 .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
@@ -305,8 +310,9 @@ body {
 .experiences__company-header-durability {
   color: var(--durability-text-color);
   text-align: left;
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 11px;
+  font-family: "Matter Light";
+  font-size: 18px;
 }
 
 .experiences__company-header-name {
@@ -314,7 +320,9 @@ body {
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
   text-align: left;
-  margin-bottom: 20px;
+  margin-block: 9px 20px;
+  font-family: "Matter Regular";
+  font-size: 30px;
 }
 
 .experiences__company-project {
@@ -326,18 +334,28 @@ body {
   color: var(--durability-text-color);
   text-align: left;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-family: "Matter Light";
+  font-style: italic;
+  font-size: 20px;
 }
 
 .experiences__company-project-name {
   color: var(--primary-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin-block: 10px;
+  font-family: "Matter Regular";
+  font-size: 25px;
 }
 
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
-  padding-left: 20px;
+  padding-left: 15px;
+  font-family: "Matter Light";
+  font-size: 20px;
+}
+
+.experiences__company-project-responsibilities li {
+ margin-bottom: 5px;
 }
 
 .additional-info {
