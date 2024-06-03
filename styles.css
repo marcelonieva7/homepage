@@ -371,21 +371,328 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 576px) {
-  .main-info,
-  .contact_info_container {
-    flex-direction: column;
+
+@media (max-width:576px) {
+  html {
+    overflow-x: hidden;
   }
 
-  .contact_info_container {
+  body {
+    width: 100vw;
+  }
+
+  .content-container {
+    width: 100vw;
+    height: 68.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+  }
+
+  .content-upper {
+    font-size: 30px;
+    font-family: "Matter Regular";
+    margin-left: 2px;
+  }
+
+
+  .content-medium {
+    font-size: 70px;
+    letter-spacing: -2px;
+    line-height: 63px;
+    font-family: "Matter Regular";
+    margin-bottom: 4px;
+    -webkit-text-stroke: 1px #605d5d;
+  }
+
+  .end-content {
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-family: "Matter Regular";
+  }
+
+  .featured-heading {
+    font-size: 70px;
+    font-family: "Matter Regular";
+  }
+
+  .scroll-instruction {
+    font-size: 15px;
+    color: #817f7f;
+    padding-bottom: 2vw;
+    margin-top: -6vw;
+    margin-bottom: 4vw;
+    font-family: "Matter Regular";
+  }
+
+  .scrollIconBody {
+    display: none;
+  }
+
+  .featured-body {
+    overflow-x: auto;
+    height: 60vh;
+    width: 78vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-name {
+    font-family: "Matter Regular";
+  }
+
+  .special,
+  .special-2,
+  .special-3,
+  .special-4 {
+    font-family: "Matter Regular";
+  }
+
+  .featured-body a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1vw;
+    height: max-content;
+    margin: 0vh 0vw;
+  }
+
+  .featured-body::-webkit-scrollbar {
+    width: 3px;
+    background-color: #434142;
+    height: 5px;
+    padding: 5px 5px;
+    border-radius: 15px;
+
+  }
+
+
+  .featured-body::-webkit-scrollbar-thumb {
+    background: #bdbcbc;
+    width: 3px;
+    border-radius: 15px;
+  }
+
+  .project-body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1vw;
+    height: max-content;
+    margin: 0vh 7.9vw;
+
+  }
+
+  .project-description {
+    width: 63vw;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding-left: 0.5vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .project-short-description {
+    font-family: "Matter Regular";
+    font-size: calc(15px + 1.5vw);
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #817f7f;
+  }
+
+  .project-tags {
+    font-family: "Matter Regular";
+    font-size: 15px;
+    font-size: calc(8.5px + 1.5vw);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    opacity: 0.3;
+  }
+
+  .project-preview {
+    width: 63vw;
+    margin-left: -4vw;
+  }
+
+  .view-projects {
+    margin-top: -25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .view-projects button {
+    padding: 2.3vw 3vw;
+    font-family: "Matter Regular";
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    background-color: transparent;
+    border: 2px solid #7a7070;
+    border-radius: 100px;
+  }
+
+  #third-page {
+    height: 110vh;
+    width: 100%;
+    padding-top: 13vw;
+    padding-bottom: 13vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .third-page-upper, .fifth-page-upper {
+    color: #000;
+    font-family: "Matter Regular";
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 11vw;
+    padding-bottom: 1vw;
+  }
+
+  .hey {
+    font-family: "Matter Regular";
+  }
+
+
+  .third-page-middle {
+    padding: 3vw 11vw;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+  }
+
+  .third-page-middle p {
+    font-family: "Matter Light";
+    font-size: 30px;
+  }
+
+  .third-page-lower {
+    padding: 0vw 11vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 2vw;
+  }
+
+  .third-page-lower button {
+    padding: 2.3vw 3vw;
+    font-family: "Matter Regular";
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 100px;
+    text-transform: capitalize;
+    margin: 0.5vh 0vh;
+  }
+
+  #fourth-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    padding-bottom: 10vw;
+    padding-left: 11vw;
+    padding-right: 11vw;
+    display: flex;
     align-items: center;
   }
 
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
+  .fourth-page-content {
+    padding: 0%;
+    margin: 0%;
   }
 
-  .experiences {
-    margin-right: 0;
+  .fourth-page-upper, .sixth-page-upper {
+    color: #fff;
+    padding-bottom: 0vw;
+    padding: 0vw 0vw;
+  }
+
+  .fourth-page-upper p, .sixth-page-upper p {
+    font-family: "Matter Regular";
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: -2vw;
+  }
+
+  .fourth-page-middle {
+    padding: 4.5vw 0vw;
+  }
+
+  .fourth-page-middle button {
+    padding: 1.3vw 2vw;
+    font-family: "Matter Regular";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #7a7070;
+    border-radius: 100px;
+    text-transform: capitalize;
+  }
+
+  .fourth-page-lower {
+    padding: 3vw 0vw;
+  }
+
+  .fourth-page-lower p {
+    font-family: "Matter Light";
+    width: 100%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+  }
+
+  #fifth-page {
+    width: 100%;
+    padding-top: 13vw;
+    padding-bottom: 13vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fifth-page-content {
+    margin-top: 15vh;
+  }
+
+  .fifth-page-middle {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  #sixth-page {
+    width: 100%;
+    background-color: #161616;
+    padding-bottom: 10vw;
+    padding-left: 11vw;
+    padding-right: 11vw;
+    padding-top: 15vh ;
   }
 }
