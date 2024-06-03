@@ -6,16 +6,16 @@ if (!reducedMotion) {
   const introTimeLine = gsap.timeline()
   
   introTimeLine.from(".cover-content", {
-    y: '100%',
+    y: '210%',
     ease: Expo.easeInOut,
-    duration: 1,
+    duration: 1.7,
     stagger: 0.15
   })
   .from(".end-content", {
     x: '100%',
     ease: Expo.easeInOut,
     duration: 1,
-    stagger: 0.3
+    stagger: 0.2
   })
 
   gsap.from("#first-reach-me", {
