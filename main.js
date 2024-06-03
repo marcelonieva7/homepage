@@ -64,3 +64,13 @@ gsap.from(".fourth-page-content", {
   duration: 1.1,
   ease: Power2
 })
+
+gsap.from(".fifth-page-content", {
+  y: "70%",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".fifth-page-content"
+  },
+  duration: 1.1,
+  ease: Power2
+})
