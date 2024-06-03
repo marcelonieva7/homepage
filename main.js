@@ -74,3 +74,13 @@ gsap.from(".fifth-page-content", {
   duration: 1.1,
   ease: Power2
 })
+
+gsap.from("#sixth-page", {
+  x: "-70%",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#sixth-page"
+  },
+  duration: 1.1,
+  ease: Power2
+})
