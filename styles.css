@@ -1,4 +1,4 @@
-/*General styles*/
+/* General styles */
 
 * {
   padding: 0%;
@@ -16,6 +16,7 @@ body {
   overflow: overlay;
   position: relative;
   overflow-x: hidden;
+
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
   --primary-light-text-color: #fff;
@@ -25,22 +26,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
   background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background: transparent;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 @font-face {
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   src: url('assets/fonts-ttf/matter-regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   src: url('assets/fonts-ttf/matter-light.ttf') format('truetype');
 }
 
@@ -87,7 +88,7 @@ body {
 }
 
 .content-upper {
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -101,7 +102,7 @@ body {
 }
 
 .content-medium {
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 7.5rem;
   color: transparent;
   -webkit-text-stroke: 2px #605d5d;
@@ -117,7 +118,7 @@ body {
 }
 
 .end-content {
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 30px;
   font-weight: 600;
   word-spacing: 2px;
@@ -129,7 +130,7 @@ body {
   background-color: var(--primary-text-color);
 }
 
-/*Contact info styles*/
+/* Contact info styles */
 
 #third-page, #fifth-page {
   width: 100%;
@@ -144,7 +145,7 @@ body {
 
 .third-page-upper, .fifth-page-upper {
   color: var(--primary-text-color);
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 100px;
   display: flex;
   flex-direction: column;
@@ -153,7 +154,7 @@ body {
 }
 
 .hey {
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   font-style: italic;
 }
 
@@ -163,22 +164,24 @@ body {
 }
 
 .third-page-middle p {
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   font-size: 30px;
 }
 
 .third-page-lower {
-  padding: 0vw 11vw;
+  padding: 0 11vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: start;
   gap: 2vw;
 }
-.third-page-lower__btn {
+
+.third-page-lower-btn {
   display: flex;
   align-items: center;
 }
+
 .contact-icon {
   width: 30px;
   height: 30px;
@@ -187,7 +190,7 @@ body {
 
 .third-page-lower a {
   padding: 1.3vw 2vw;
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -210,11 +213,11 @@ body {
 .fourth-page-upper, .sixth-page-upper  {
   padding: 3vw 11vw;
   color: var(--primary-light-text-color);
-  padding-bottom: 0vw;
+  padding-bottom: 0;
 }
 
 .fourth-page-upper p, .sixth-page-upper p {
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 120px;
   font-weight: 500;
   color: var(--primary-light-text-color);
@@ -227,7 +230,7 @@ body {
 }
 
 .resources {
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   font-style: italic;
 }
 
@@ -242,7 +245,7 @@ body {
 
 .fourth-page-middle a {
   padding: 10px 20px;
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -262,19 +265,19 @@ body {
 }
 
 .fourth-page-lower {
-  padding: 0vw 11vw;
+  padding: 0 11vw;
   margin-top: -1vw;
 }
 
 .fourth-page-lower p {
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   width: 62.5%;
   font-size: 24px;
   font-weight: 200;
   color: var(--primary-light-text-color);
 }
 
-/*Experience and additional info styles*/
+/* Experience and additional info styles */
 
 .fifth-page-middle {
   display: flex;
@@ -286,60 +289,60 @@ body {
   margin-right: 50px;
 }
 
-.experiences__header {
+.experiences-header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
 
-.experiences__company-header-durability {
+.experiences-company-header-durability {
   color: var(--durability-text-color);
   text-align: left;
   margin-bottom: 11px;
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   font-size: 18px;
 }
 
-.experiences__company-header-name {
+.experiences-company-header-name {
   color: var(--primary-text-color);
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
   text-align: left;
   margin-block: 9px 20px;
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 30px;
 }
 
-.experiences__company-project {
+.experiences-company-project {
   margin-left: 15px;
   margin-bottom: 25px;
 }
 
-.experiences__company-project-role {
+.experiences-company-project-role {
   color: var(--durability-text-color);
   text-align: left;
   margin-bottom: 10px;
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   font-style: italic;
   font-size: 20px;
 }
 
-.experiences__company-project-name {
+.experiences-company-project-name {
   color: var(--primary-text-color);
   text-align: left;
   margin-block: 10px;
-  font-family: "Matter Regular";
+  font-family: sans-serif, "Matter Regular";
   font-size: 25px;
 }
 
-.experiences__company-project-responsibilities {
+.experiences-company-project-responsibilities {
   color: var(--secondary-text-color);
   padding-left: 15px;
-  font-family: "Matter Light";
+  font-family: sans-serif, "Matter Light";
   font-size: 20px;
 }
 
-.experiences__company-project-responsibilities li {
+.experiences-company-project-responsibilities li {
  margin-bottom: 5px;
 }
 
@@ -356,7 +359,7 @@ body {
 }
 
 
-@media (max-width:576px) {
+@media (width <=576px) {
   html {
     overflow-x: hidden;
   }
@@ -380,16 +383,15 @@ body {
 
   .content-upper {
     font-size: 30px;
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
     margin-left: 2px;
   }
-
 
   .content-medium {
     font-size: 70px;
     letter-spacing: -2px;
     line-height: 63px;
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
     margin-bottom: 4px;
     -webkit-text-stroke: 1px #605d5d;
   }
@@ -400,12 +402,12 @@ body {
     word-spacing: 2px;
     line-height: 28px;
     margin-bottom: 10px;
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
   }
 
   .featured-heading {
     font-size: 70px;
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
   }
 
   .scroll-instruction {
@@ -414,11 +416,7 @@ body {
     padding-bottom: 2vw;
     margin-top: -6vw;
     margin-bottom: 4vw;
-    font-family: "Matter Regular";
-  }
-
-  .scrollIconBody {
-    display: none;
+    font-family: sans-serif, "Matter Regular";
   }
 
   .featured-body {
@@ -432,105 +430,14 @@ body {
   }
 
   .project-name {
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
   }
 
   .special,
   .special-2,
   .special-3,
   .special-4 {
-    font-family: "Matter Regular";
-  }
-
-  .featured-body a {
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 1vw;
-    height: max-content;
-    margin: 0vh 0vw;
-  }
-
-  .featured-body::-webkit-scrollbar {
-    width: 3px;
-    background-color: #434142;
-    height: 5px;
-    padding: 5px 5px;
-    border-radius: 15px;
-
-  }
-
-
-  .featured-body::-webkit-scrollbar-thumb {
-    background: #bdbcbc;
-    width: 3px;
-    border-radius: 15px;
-  }
-
-  .project-body {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 1vw;
-    height: max-content;
-    margin: 0vh 7.9vw;
-
-  }
-
-  .project-description {
-    width: 63vw;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--primary-light-text-color);
-    padding-left: 0.5vw;
-    margin-bottom: 3.5vh;
-  }
-
-  .project-short-description {
-    font-family: "Matter Regular";
-    font-size: calc(15px + 1.5vw);
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #817f7f;
-  }
-
-  .project-tags {
-    font-family: "Matter Regular";
-    font-size: 15px;
-    font-size: calc(8.5px + 1.5vw);
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    opacity: 0.3;
-  }
-
-  .project-preview {
-    width: 63vw;
-    margin-left: -4vw;
-  }
-
-  .view-projects {
-    margin-top: -25vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .view-projects button {
-    padding: 2.3vw 3vw;
-    font-family: "Matter Regular";
-    font-size: 15px;
-    color: var(--primary-light-text-color);
-    letter-spacing: 1.2px;
-    background-color: transparent;
-    border: 2px solid #7a7070;
-    border-radius: 100px;
+    font-family: sans-serif, "Matter Regular";
   }
 
   #third-page {
@@ -546,7 +453,7 @@ body {
 
   .third-page-upper, .fifth-page-upper {
     color: var(--primary-text-color);
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
     font-size: 48px;
     display: flex;
     flex-direction: column;
@@ -555,7 +462,7 @@ body {
   }
 
   .hey {
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
   }
 
 
@@ -566,15 +473,14 @@ body {
   }
 
   .third-page-middle p {
-    font-family: "Matter Light";
+    font-family: sans-serif, "Matter Light";
     font-size: 30px;
   }
 
   .third-page-lower {
-    padding: 0vw 11vw;
+    padding: 0 11vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: start;
     justify-content: start;
     gap: 2vw;
@@ -582,7 +488,7 @@ body {
 
   .third-page-lower a {
     padding: 2.3vw 3vw;
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
     font-size: 17px;
     font-weight: 500;
     color: var(--primary-text-color);
@@ -590,7 +496,7 @@ body {
     border: 2px solid var(--primary-text-color);
     border-radius: 100px;
     text-transform: capitalize;
-    margin: 0.5vh 0vh;
+    margin: 0.5vh 0;
   }
 
   #fourth-page {
@@ -611,12 +517,11 @@ body {
 
   .fourth-page-upper, .sixth-page-upper {
     color: var(--primary-light-text-color);
-    padding-bottom: 0vw;
-    padding: 0vw 0vw;
+    padding: 0;
   }
 
   .fourth-page-upper p, .sixth-page-upper p {
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
     font-size: 50px;
     font-weight: 500;
     color: var(--primary-light-text-color);
@@ -624,12 +529,12 @@ body {
   }
 
   .fourth-page-middle {
-    padding: 4.5vw 0vw;
+    padding: 4.5vw 0;
   }
 
   .fourth-page-middle a {
     padding: 1.3vw 2vw;
-    font-family: "Matter Regular";
+    font-family: sans-serif, "Matter Regular";
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -641,11 +546,11 @@ body {
   }
 
   .fourth-page-lower {
-    padding: 3vw 0vw;
+    padding: 3vw 0;
   }
 
   .fourth-page-lower p {
-    font-family: "Matter Light";
+    font-family: sans-serif, "Matter Light";
     width: 100%;
     font-size: 20px;
     font-weight: 200;
@@ -674,9 +579,6 @@ body {
   #sixth-page {
     width: 100%;
     background-color: #161616;
-    padding-bottom: 10vw;
-    padding-left: 11vw;
-    padding-right: 11vw;
-    padding-top: 15vh ;
+    padding: 15vh 11vw 10vw;
   }
 }
