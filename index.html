@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="locomotive.css">
     <link rel="stylesheet" href="cuberto.css">
+    <link rel="stylesheet" href="locomotive.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
   <main>
@@ -14,10 +14,10 @@
       <div class="content-container">
         <div class="content">
             <div class="cover">
-                <p class="content-upper">Hi, I am a</p>
+                <p class="content-upper cover-content">Hi, I am a</p>
             </div>
             <div class="cover">
-                <p class="content-medium">Full-Stack Developer.</p>
+                <p class="content-medium cover-content">Full-Stack Developer.</p>
             </div>
         </div>
       </div>
@@ -37,8 +37,8 @@
     <div id="third-page" class="container">
       <div class="third-page-content">
           <div class="third-page-upper">
-              <p class="reach-me"><span class="hey">Hey!</span> want to </p>
-              <p class="reach-me-lower">reach me <i class="ri-customer-service-2-line"></i></p>
+              <p id="first-reach-me" class="reach-me"><span class="hey">Hey!</span> want to </p>
+              <p id="second-reach-me" class="reach-me-lower">reach me</p>
           </div>
           <div class="third-page-middle">
               <p>I'm avaliable on...</p>
@@ -309,5 +309,23 @@
       </div>
     </div>
   </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+        integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
