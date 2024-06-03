@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const introTimeLine = gsap.timeline();
+const introTimeLine = gsap.timeline()
 
 introTimeLine.from(".cover-content", {
   y: '100%',
@@ -15,3 +15,42 @@ introTimeLine.from(".cover-content", {
   stagger: 0.3
 })
 
+gsap.from("#first-reach-me", {
+  x: "-100%",
+  scrollTrigger: {
+    trigger: "#first-reach-me"
+  },
+  duration: 1,
+  ease: Power2
+})
+
+gsap.from("#second-reach-me", {
+  x: "-100%",
+  scrollTrigger: {
+    trigger: "#second-reach-me"
+  },
+  duration: 1,
+  ease: Power2
+})
+
+const contactTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".third-page-middle"
+  }
+})
+
+contactTimeline.from(".third-page-middle", {
+  y: "100%",
+  opacity: 0,
+  duration: 1,
+  delay: 0.1,
+  ease: Power2
+})
+
+
+contactTimeline.from(".third-page-lower", {
+  y: "100%",
+  opacity: 0,
+  duration: 1,
+  ease: Power2
+})
