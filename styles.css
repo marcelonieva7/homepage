@@ -185,7 +185,7 @@ body {
   padding-right: 7px;
 }
 
-.third-page-lower button {
+.third-page-lower a {
   padding: 1.3vw 2vw;
   font-family: "Matter Regular";
   font-size: 18px;
@@ -240,7 +240,7 @@ body {
   padding: 10px 45px;
 }
 
-.fourth-page-middle button {
+.fourth-page-middle a {
   padding: 10px 20px;
   font-family: "Matter Regular";
   font-size: 18px;
@@ -251,15 +251,14 @@ body {
   border: 2px solid #7a7070;
   border-radius: 100px;
   text-transform: capitalize;
-}
-
-.fourth-page-middle a {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .skill-btn svg, #github-btn svg{
   height: 35px;
   width: 35px;
+  position: relative;
+  bottom: -11px;
 }
 
 .fourth-page-lower {
@@ -581,7 +580,7 @@ body {
     gap: 2vw;
   }
 
-  .third-page-lower button {
+  .third-page-lower a {
     padding: 2.3vw 3vw;
     font-family: "Matter Regular";
     font-size: 17px;
@@ -628,7 +627,7 @@ body {
     padding: 4.5vw 0vw;
   }
 
-  .fourth-page-middle button {
+  .fourth-page-middle a {
     padding: 1.3vw 2vw;
     font-family: "Matter Regular";
     font-size: 18px;
