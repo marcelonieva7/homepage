@@ -153,6 +153,10 @@ body {
   padding-bottom: 1vw;
 }
 
+.third-page-upper h2 {
+  font-size: 100px;
+}
+
 .hey {
   font-family: sans-serif, "Matter Light";
   font-style: italic;
@@ -216,7 +220,7 @@ body {
   padding-bottom: 0;
 }
 
-.fourth-page-upper p, .sixth-page-upper p {
+.fourth-page-upper h2, .sixth-page-upper h2 {
   font-family: sans-serif, "Matter Regular";
   font-size: 120px;
   font-weight: 500;
@@ -224,7 +228,7 @@ body {
   margin-top: -2vw;
 }
 
-.fourth-page-upper p::selection {
+.fourth-page-upper h2::selection {
   color: var(--primary-text-color);
   background-color: var(--primary-light-text-color);
 }
@@ -461,6 +465,10 @@ body {
     padding-bottom: 1vw;
   }
 
+  .third-page-upper h2 {
+    font-size: 48px;
+  }
+
   .hey {
     font-family: sans-serif, "Matter Regular";
   }
@@ -520,7 +528,7 @@ body {
     padding: 0;
   }
 
-  .fourth-page-upper p, .sixth-page-upper p {
+  .fourth-page-upper h2, .sixth-page-upper h2 {
     font-family: sans-serif, "Matter Regular";
     font-size: 50px;
     font-weight: 500;
