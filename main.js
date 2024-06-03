@@ -54,3 +54,13 @@ contactTimeline.from(".third-page-lower", {
   duration: 1,
   ease: Power2
 })
+
+gsap.from(".fourth-page-content", {
+  x: "-40%",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".fourth-page-content"
+  },
+  duration: 1.1,
+  ease: Power2
+})
